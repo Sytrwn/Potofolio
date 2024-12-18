@@ -17,17 +17,17 @@ function Navbar() {
       </h1>
 
       <nav className="nav font-semibold font-freckle text-lg hidden lg:flex">
-        <ul className="flex items-center">
-          <li className="p-4  hover:border-opacity-100 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer active">
+        <ul className="flex items-center ">
+          <li className="p-4  hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer active">
             <a href="#">Home</a>
           </li>
-          <li className="p-4  border-opacity-0 hover:border-opacity-100 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
+          <li className="p-4  border-opacity-0 hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
             <a href="#">About</a>
           </li>
-          <li className="p-4  border-opacity-0 hover:border-opacity-100 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
+          <li className="p-4  border-opacity-0 hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
             <a href="#">Collections</a>
           </li>
-          <li className="p-4  border-opacity-0 hover:border-opacity-100 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
+          <li className="p-4  border-opacity-0 hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
             <a href="#">Contact</a>
           </li>
         </ul>

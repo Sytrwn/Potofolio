@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import "../index.css";
+import alfinImage from "../assets/alfin.jpeg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Hero() {
   const [text, setText] = useState(""); // State for typing animation
@@ -32,14 +36,38 @@ function Hero() {
     return () => clearTimeout(timeout); // Cleanup timeout
   }, [text, isDeleting, index, speed]);
 
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-      <div className="lg:max-w-lg">
-        <h1 className="text-3xl font-freckle tracking-wide text-gray-800 lg:text-4xl">
-          {text}
-          <span className="animate-blink">|</span>
-        </h1>
-        <p className="mt-2 text-gray-600 font-freckle">Junior Front-end</p>
+    <div className="container flex flex-col lg:flex-row items-center px-40 py-10 mx-auto space-y-6 lg:space-y-0 lg:space-x-10 lg:py-16">
+      {/* Text Section */}
+      <div className="w-full lg:w-1/2">
+        <div className="lg:max-w-lg">
+          <h1 className="text-3xl font-freckle tracking-wide text-gray-800 lg:text-4xl">
+            {text}
+            <span className="animate-blink">|</span>
+          </h1>
+          <p className="mt-2 text-gray-600 font-freckle">
+            Mahasiswa Teknik Informatika
+          </p>
+        </div>
+      </div>
+
+      {/* Image Section */}
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        className="flex items-center justify-center w-full h-auto lg:w-64 bg-merahPastel p-4 rounded-md "
+      >
+        <img
+          className="object-cover w-48 h-48 rounded-full sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-48 lg:h-48 hover:scale-110 hover:duration-300 "
+          src={alfinImage}
+          alt="Alfin Syatriawan"
+        />
       </div>
     </div>
   );

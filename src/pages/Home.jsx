@@ -13,7 +13,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <div data-aos="fade-right" data-aos-delay="200">
+      <div>
         {" "}
         <Hero />
       </div>
