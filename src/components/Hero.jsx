@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
-import alfinImage from "../assets/alfin.jpeg";
+import alfinImage from "../assets/fotoporto.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -36,14 +36,8 @@ function Hero() {
     return () => clearTimeout(timeout); // Cleanup timeout
   }, [text, isDeleting, index, speed]);
 
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
-
   return (
-    <div className="container flex flex-col lg:flex-row items-center px-40 py-10 mx-auto space-y-6 lg:space-y-0 lg:space-x-10 lg:py-16">
+    <div className="container flex flex-col lg:flex-row items-center px-52 py-10 mx-auto gap-52 lg:space-y-0 lg:space-x-10 lg:py-16">
       {/* Text Section */}
       <div className="w-full lg:w-1/2">
         <div className="lg:max-w-lg">
@@ -60,11 +54,11 @@ function Hero() {
       {/* Image Section */}
       <div
         data-aos="fade-right"
-        data-aos-duration="1000"
-        className="flex items-center justify-center w-full h-auto lg:w-64 bg-merahPastel p-4 rounded-md "
+        data-aos-duration="800"
+        className="flex items-center justify-center w-full h-auto lg:w-[370px]  p-4  "
       >
         <img
-          className="object-cover w-48 h-48 rounded-full sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-48 lg:h-48 hover:scale-110 hover:duration-300 "
+          className="object-cover w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-full lg:h-auto transform hover:scale-110 transition duration-500 ease-in-out "
           src={alfinImage}
           alt="Alfin Syatriawan"
         />

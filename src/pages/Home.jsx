@@ -3,11 +3,13 @@ import Navbar from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Hero from "../components/Hero";
+import About from "../components/About";
 
 function Home() {
   useEffect(() => {
     AOS.init({
-      once: true,
+      duration: 800,
+      once: false,
     });
   }, []);
   return (
@@ -16,6 +18,13 @@ function Home() {
       <div>
         {" "}
         <Hero />
+      </div>
+      <br />
+      <br />
+
+      <div>
+        {" "}
+        <About />{" "}
       </div>
     </div>
   );

@@ -13,3 +13,14 @@
     visibility: hidden;
   }
 }
+.custom-progress::-webkit-progress-bar {
+  background-color: white;
+}
+
+.custom-progress::-webkit-progress-value {
+  background-color: #22c55e;
+}
+
+.custom-progress::-moz-progress-bar {
+  background-color: #22c55e;
+}

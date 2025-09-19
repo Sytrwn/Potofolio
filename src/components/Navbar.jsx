@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <header className="header sticky top-0 bg-putihPastel  shadow-md flex items-center justify-between px-8 py-2">
+    <header className="fixed top-0 left-0 w-full bg-putihPastel shadow-md flex items-center justify-between px-8 py-8 z-50 h-20">
       <h1 className="w-3/12">
         <a href="#" aria-label="Company Logo">
           <svg
