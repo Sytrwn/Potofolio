@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll"; // pastikan import react-scroll
 
 function Navbar() {
   return (
@@ -17,18 +18,31 @@ function Navbar() {
       </h1>
 
       <nav className="nav font-semibold font-freckle text-lg hidden lg:flex">
-        <ul className="flex items-center ">
-          <li className="p-4  hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer active">
-            <a href="#">Home</a>
+        <ul className="flex items-center">
+          <li className="p-4 cursor-pointer text-hitamPastel hover:text-hijauPastel duration-200">
+            <Link
+              to="home"
+              smooth={true}
+              duration={600}
+              offset={-80} // biar tidak ketutupan navbar
+            >
+              Home
+            </Link>
           </li>
-          <li className="p-4  border-opacity-0 hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
-            <a href="#">About</a>
+          <li className="p-4 cursor-pointer text-hitamPastel hover:text-hijauPastel duration-200">
+            <Link to="about" smooth={true} duration={600} offset={-80}>
+              About
+            </Link>
           </li>
-          <li className="p-4  border-opacity-0 hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
-            <a href="#">Collections</a>
+          <li className="p-4 cursor-pointer text-hitamPastel hover:text-hijauPastel duration-200">
+            <Link to="collections" smooth={true} duration={600} offset={-80}>
+              Collections
+            </Link>
           </li>
-          <li className="p-4  border-opacity-0 hover:border-opacity-100 hover:scale-110 text-hitamPastel hover:text-hijauPastel duration-200 cursor-pointer">
-            <a href="#">Contact</a>
+          <li className="p-4 cursor-pointer text-hitamPastel hover:text-hijauPastel duration-200">
+            <Link to="contact" smooth={true} duration={600} offset={-80}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

@@ -126,4 +126,5 @@ function About() {
   );
 }
 
+//Buat Collections Beberapa penghargaan lomba, dan contacts
 export default About;
