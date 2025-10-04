@@ -72,7 +72,10 @@ function About() {
       </div>
 
       {/* Progress Bars */}
-      <div className="flex font-freckle items-center justify-center py-14">
+      <div
+        id="progress"
+        className="flex font-freckle items-center justify-center py-14"
+      >
         <div
           ref={containerRef}
           className="grid grid-cols-1 sm:grid-cols-2 gap-12"

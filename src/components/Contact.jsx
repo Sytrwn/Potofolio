@@ -277,11 +277,11 @@ function Contact() {
         </div>
 
         {/* Decorative Elements */}
-        <div className="mt-8 flex justify-center gap-3">
+        {/* <div className="mt-8 flex justify-center gap-3">
           <div className="h-2 w-12 bg-[#48BEFF] rounded-full"></div>
           <div className="h-2 w-8 bg-[#A1D6B2] rounded-full"></div>
           <div className="h-2 w-4 bg-[#48BEFF]/60 rounded-full"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

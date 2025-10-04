@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 function Home() {
   useEffect(() => {
@@ -40,6 +41,10 @@ function Home() {
       {/* Contact Section */}
       <div id="contact" className="px-28 py-20">
         <Contact />
+      </div>
+      <div>
+        {" "}
+        <Footer />
       </div>
     </div>
   );

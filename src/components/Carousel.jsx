@@ -1,27 +1,32 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Aos from "aos";
+import MSIB6 from "../assets/maribelajar.png";
+import harapan1 from "../assets/harapan1.png";
+import MSIB5 from "../assets/msib5.png";
+import PKM from "../assets/PKM.jpg";
 
 const slides = [
   {
-    image: "https://picsum.photos/id/1015/800/400",
-    title: "Gunung Indah",
-    description: "Menikmati suasana pegunungan yang sejuk dan asri.",
+    image: MSIB5,
+    title: "MSIB 5 Ui/Ux dan Web Development",
+    description: "Berhasil Menyelesaikan Collab dengan Tim Mobile",
   },
   {
-    image: "https://picsum.photos/id/1025/800/400",
-    title: "Pantai Eksotis",
-    description: "Pasir putih dan air laut yang jernih menyegarkan mata.",
+    image: MSIB6,
+    title: "MSIB 6 Microsoft Web dan Mobile",
+    description: "Berhasil menyelesaikan Capstone Project ",
   },
   {
-    image: "https://picsum.photos/id/1040/800/400",
-    title: "Hutan Tropis",
-    description: "Keindahan alam tropis dengan pepohonan rindang.",
+    image: PKM,
+    title: "PKM-PM",
+    description: "Berhasil Masuk tahap pendanaan pada PKM tahun 2024.",
   },
   {
-    image: "https://picsum.photos/id/1060/800/400",
-    title: "Danau Tenang",
-    description: "Suasana damai dengan air danau yang memantulkan langit.",
+    image: harapan1,
+    title: "Juara Harapan 1",
+    description:
+      "Berhasil menjadi juara Harapan 1 pada lomba MSIB 6 yang diadakan oleh MariBelajar.",
   },
 ];
 
@@ -63,6 +68,9 @@ export default function Carousel() {
         data-aos="fade-right"
         data-aos-duration="1500"
       >
+        <h1 className="text-center font-freckle text-4xl text-biruPastel">
+          Collections
+        </h1>
         {/* Slides Container */}
         <div className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
           {slides.map((slide, index) => (

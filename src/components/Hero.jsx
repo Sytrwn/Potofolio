@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import alfinImage from "../assets/fotoporto2.png";
 
 function Hero() {
+  // Diatas foto
   const [text, setText] = useState("");
   const phrases = ["Alfin Syatriawan", "Junior Front-end"];
   const [index, setIndex] = useState(0);
@@ -48,7 +49,7 @@ function Hero() {
                 <span className="bg-gradient-to-r from-hijauPastel  to-merahPastel bg-clip-text text-transparent">
                   {text}
                 </span>
-                <span className="inline-block w-1 h-12 sm:h-14 md:h-16 lg:h-20 bg-gradient-to-b from-hijauPastel to-merahPastel animate-pulse ml-1"></span>
+                <span className="inline-block w-1 h-12 sm:h-14 md:h-16 lg:h-20 bg-gradient-to-b from-hijauPastel to-merahPastel blink-caret ml-1"></span>
               </h1>
 
               {/* Subtitle */}
@@ -97,6 +98,20 @@ function Hero() {
       </div>
 
       <style jsx>{`
+        @keyframes blink {
+          0%,
+          50% {
+            opacity: 1;
+          }
+          51%,
+          100% {
+            opacity: 0;
+          }
+        }
+        .blink-caret {
+          animation: blink 0.5s step-start infinite;
+        }
+
         @keyframes blob {
           0% {
             transform: translate(0px, 0px) scale(1);
