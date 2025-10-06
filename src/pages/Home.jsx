@@ -26,7 +26,7 @@ function Home() {
       </div>
 
       {/* About Section */}
-      <div id="about" className=" -mt-16 md:-mt-16 lg:-py-20 lg:-mt-24">
+      <div id="about" className="  md:-mt-16 lg:-py-20 lg:mt-10">
         <About />
       </div>
 
@@ -39,7 +39,7 @@ function Home() {
       </div>
 
       {/* Contact Section */}
-      <div id="contact" className="lg:-mt-8 -mt-20">
+      <div id="contact" className="lg:mt-40 -mt-20">
         <Contact />
       </div>
       <div>
