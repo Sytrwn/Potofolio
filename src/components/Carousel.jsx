@@ -68,11 +68,11 @@ export default function Carousel() {
         data-aos="fade-right"
         data-aos-duration="1500"
       >
-        <h1 className="text-center font-freckle text-4xl text-biruPastel">
+        <h1 className="text-center font-freckle mb-10 text-4xl text-biruPastel">
           Collections
         </h1>
         {/* Slides Container */}
-        <div className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+        <div className="relative w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center overflow-hidden px-2">
           {slides.map((slide, index) => (
             <div
               key={index}
@@ -80,11 +80,11 @@ export default function Carousel() {
                 index
               )}`}
             >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative  rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-72 md:h-80 object-cover"
+                  className="w-full h-64 rounded-2xl md:h-80 md:rounded-lg object-cover shadow-md"
                 />
                 {index === current && (
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent text-white p-4 md:p-6">
@@ -119,7 +119,7 @@ export default function Carousel() {
         </button>
 
         {/* Indicators */}
-        <div className="flex justify-center gap-0.5">
+        <div className="flex justify-center mt-10 gap-0.5">
           {slides.map((_, index) => (
             <button
               key={index}

@@ -118,7 +118,11 @@ function Contact() {
 
   return (
     <div className="min-h-screen bg-[#F2EFE5] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
-      <div className="max-w-4xl w-full">
+      <div
+        className="max-w-4xl w-full"
+        data-aos="fade-bottom"
+        data-aos-duration="1000"
+      >
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-freckle text-[#48BEFF] mb-4">
             Get In Touch
@@ -128,10 +132,7 @@ function Contact() {
           </p>
         </div>
 
-        <div
-          className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-xl p-6 sm:p-8 md:p-12 border-2 border-[#A1D6B2]"
-          data-aos="fade-bottom"
-        >
+        <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-xl p-6 sm:p-8 md:p-12 border-2 border-[#A1D6B2]">
           <div className="space-y-6">
             {/* Name Input */}
             <div className="relative">
