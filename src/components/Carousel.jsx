@@ -119,7 +119,7 @@ export default function Carousel() {
         </button>
 
         {/* Indicators */}
-        <div className="flex justify-center mt-10 gap-0.5">
+        <div className="flex justify-center  mt-10 gap-0.5">
           {slides.map((_, index) => (
             <button
               key={index}

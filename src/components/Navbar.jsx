@@ -90,15 +90,6 @@ function Navbar() {
                 {link.name}
               </Link>
             ))}
-
-            {/* Search for Mobile */}
-            <button
-              className="w-full px-6 py-3 rounded-xl font-freckle text-gray-700 hover:bg-[#A1D6B2] hover:text-white transition-all duration-300 flex items-center gap-2"
-              aria-label="Search"
-            >
-              <Search className="h-5 w-5" />
-              <span>Search</span>
-            </button>
           </nav>
         </div>
       </header>
