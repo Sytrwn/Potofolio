@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Freckle+Face&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap");
+
 /* Animasi kursor berkedip */
 .animate-blink {
   animation: blink 1s steps(2, start) infinite;

@@ -10,7 +10,7 @@ module.exports = {
         biruPastel: "#48BEFF",
       },
       fontFamily: {
-        freckle: ['"Freckle Face"', "cursive"],
+        freckle: ['"Chewy"', "cursive"],
       },
     },
   },
